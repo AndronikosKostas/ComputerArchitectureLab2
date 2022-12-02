@@ -25,7 +25,7 @@ size 32KB 2-way-associative : system.cpu.icache
 
 | Benchmarks | system.cpu.cpi | system.cpu.dcache.overall_miss_rate::total | system.cpu.icache.overall_miss_rate::total | system.l2.overall_miss_rate::total |
 | ---------- | -------------- | ------------------------------------------ | ------------------------------------------ | ---------------------------------- |
-| 401_1GHz | | 1.610247 | 0.014675 | 0.000077 |	0.282157 |
+| 401_1GHz | 1.610247 | 0.014675 | 0.000077 |	0.282157 |
 | 401Results | 1.679650 |	0.014798 | 0.000077 |	0.282163 |
 | 401_3GHz | 1.753291 | 0.014932 | 0.000077 |	0.282166 |
 | 429_1GHz | 1.279422 |	0.002108 | 0.023627 |	0.055046 |
@@ -48,4 +48,11 @@ cpu_cluster.clk_domain.clock : 1GHz or 3GHz (customizable)\
 If we had another cpu, it would also be up to us the frequency that it would run 
 
 ## Q2.1
+- L1 icache size :
+- L1 icache associativity : 2-way and 4-way
+- L1 dcache size : 64kB and 128kB
+- L1 dcache associativity : 2-way and 4-way
+- L2 cache size : 2MB and 4MB
+- L2 cache associativity : 8 and 16
+- Cache line size : 128 and 256 
 
