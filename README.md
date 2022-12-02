@@ -3,17 +3,13 @@
 ## Q1.1
 ### From the file config.ini
 #### L1 Data Cache Size 
-64kB and 2-way-associative //  system.cpu.dcache
+64kB and 2-way-associative : system.cpu.dcache
 
-#### L1 Instruction cache : 
-size 32KB 2-way-associative // system.cpu.icache
+#### L1 Instruction cache 
+size 32KB 2-way-associative : system.cpu.icache
 
 #### L2 cache size
-2MB 8-way-associative // system.l2
-
-size=2097152
-assoc=8
-Από [system] cache line size : 64B
+2MB 8-way-associative : system.l2
 
 ### Q1.2
 
@@ -25,6 +21,11 @@ assoc=8
 |L1 dcache missrate(%)|1.4798|0.2108|0.1637|12.1831|6.0972
 |L2 cache missrate(%)|28.2163|5.5046|7.7760|99.9972|99.9944
 
-
-
 ## Q1.3
+
+system.clk_domain.clock : 2GHz \
+cpu_cluster.clk_domain.clock : 1GHz or 3GHz (customizable)\
+If we had another cpu, it would also be up to us the frequency that it would run 
+
+## Q2.1
+
