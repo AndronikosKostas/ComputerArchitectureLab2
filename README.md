@@ -56,3 +56,6 @@ If we had another cpu, it would also be up to us the frequency that it would run
 - L2 cache associativity : 8-way and 16-way
 - Cache line size : 128 and 256 
 
+
+## Q2.2 
+loading...
