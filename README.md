@@ -24,7 +24,6 @@ size 32KB 2-way-associative : system.cpu.icache
 
 ![image](https://user-images.githubusercontent.com/58566096/205336719-32d2ab54-088c-49bf-9b1b-d812e7562a2e.png)
 
-![image](https://user-images.githubusercontent.com/58566096/205336787-30e19d92-75dd-4325-86f0-2cdd787eb4b3.png)
 
 ### Q1.3
 
