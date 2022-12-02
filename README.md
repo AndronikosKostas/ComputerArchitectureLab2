@@ -21,6 +21,11 @@ size 32KB 2-way-associative : system.cpu.icache
 |L1 dcache missrate(%)|1.4798|0.2108|0.1637|12.1831|6.0972
 |L2 cache missrate(%)|28.2163|5.5046|7.7760|99.9972|99.9944
 
+
+![image](https://user-images.githubusercontent.com/58566096/205336719-32d2ab54-088c-49bf-9b1b-d812e7562a2e.png)
+
+![image](https://user-images.githubusercontent.com/58566096/205336787-30e19d92-75dd-4325-86f0-2cdd787eb4b3.png)
+
 ### Q1.3
 
 | Benchmarks | system.cpu.cpi | system.cpu.dcache.overall_miss_rate::total | system.cpu.icache.overall_miss_rate::total | system.l2.overall_miss_rate::total |
