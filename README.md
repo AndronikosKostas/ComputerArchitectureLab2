@@ -53,6 +53,6 @@ If we had another cpu, it would also be up to us the frequency that it would run
 - L1 dcache size : 64kB and 128kB
 - L1 dcache associativity : 2-way and 4-way
 - L2 cache size : 2MB and 4MB
-- L2 cache associativity : 8 and 16
+- L2 cache associativity : 8-way and 16-way
 - Cache line size : 128 and 256 
 
