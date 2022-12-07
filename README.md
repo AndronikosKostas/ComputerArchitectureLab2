@@ -50,6 +50,13 @@ size 32KB 2-way-associative : system.cpu.icache
 | 470Results | 3.493415 | 0.060972 | 0.000094	| 0.999944 |
 |470_3GHz |	4.397377 | 0.060972	|	0.000094 |0.999944 |
 
+![image](https://user-images.githubusercontent.com/58566096/206320370-e5f7f6b2-2bb5-433d-bdc5-5b34c2e181f4.png)
+![image](https://user-images.githubusercontent.com/58566096/206320550-1f9a6bcb-1f74-410a-911f-85e82617bd44.png)
+![image](https://user-images.githubusercontent.com/58566096/206320668-b56944b1-b001-498e-a876-c7518327a886.png)
+![image](https://user-images.githubusercontent.com/58566096/206320763-75134548-58d1-49c0-92eb-b8a5a11781fb.png)
+![image](https://user-images.githubusercontent.com/58566096/206320900-62181ae1-670d-4267-bcc5-1c580fe208db.png)
+
+
 ## Q1.3
 
 system.clk_domain.clock : 2GHz \
