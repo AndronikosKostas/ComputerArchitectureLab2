@@ -78,6 +78,7 @@ If we had another cpu, it would also be up to us the frequency that it would run
 ![image](https://user-images.githubusercontent.com/58566096/206483224-0e57f849-d4a2-4c54-8af6-65c68b0adc07.png)
 ![image](https://user-images.githubusercontent.com/58566096/206495079-df4524e2-a69c-425b-b438-324cc57e195d.png)
 ![image](https://user-images.githubusercontent.com/58566096/206498402-5532fc7f-c780-4a77-bbfe-5feb1defe46e.png)
+![image](https://user-images.githubusercontent.com/58566096/206527847-b5e8f5d5-bea6-449e-b234-b79dd34db629.png)
 
 
 
