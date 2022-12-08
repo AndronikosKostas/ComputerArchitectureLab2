@@ -29,7 +29,8 @@ size 32KB 2-way-associative : system.cpu.icache
 ![image](https://user-images.githubusercontent.com/58566096/206316437-fc478af6-90d2-4bc4-a505-78a2dc395180.png)
 
 #### Notes - Comments
-- The C
+- The graphs of the CPI and Execution time show great similarity.
+- With an increase in frequency we also get an increase in CPI 
 
 
 ### Q1.3
