@@ -73,7 +73,7 @@ If we had another cpu, it would also be up to us the frequency that it would run
 - Cache line size : 128 and 256 
 
 
-## Q2.2 
+## Q2.2 - Graphs
 
 ![image](https://user-images.githubusercontent.com/58566096/206483224-0e57f849-d4a2-4c54-8af6-65c68b0adc07.png)
 ![image](https://user-images.githubusercontent.com/58566096/206495079-df4524e2-a69c-425b-b438-324cc57e195d.png)
