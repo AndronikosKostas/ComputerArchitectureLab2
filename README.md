@@ -65,7 +65,7 @@ size 32KB 2-way-associative : system.cpu.icache
 system.clk_domain.clock : 2GHz \
 cpu_cluster.clk_domain.clock : 1GHz or 3GHz (customizable)\
 If we had another cpu, it would also be up to us the frequency that it would run 
-
+- CPU scaling is a measure of how much workload can be driven when the CPU resources are increased. In our case we cannot have perfect scaling because some peripherals cannot run in such high frequencies.
 ## Q2.1 - Simulations
 - L1 icache size : 128kB
 - L1 icache associativity : 2-way and 4-way
