@@ -62,7 +62,7 @@ size 32KB 2-way-associative : system.cpu.icache
 
 ## Q1.3
 
-- system.clk_domain.clock : 2GHz, cpu_cluster.clk_domain.clock : 1GHz or 3GHz (customizable)\
+- system.clk_domain.clock : 2GHz, cpu_cluster.clk_domain.clock : 1GHz or 3GHz (customizable) \
 - If we had another cpu, it would also be up to us the frequency that it would run 
 
 
