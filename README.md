@@ -22,12 +22,14 @@ size 32KB 2-way-associative : system.cpu.icache
 |L2 cache missrate(%)|28.2163|5.5046|7.7760|99.9972|99.9944
 
 
-![image](https://user-images.githubusercontent.com/58566096/205336719-32d2ab54-088c-49bf-9b1b-d812e7562a2e.png)
+
 ![image](https://user-images.githubusercontent.com/58566096/206314745-88aba713-2d09-4013-af88-5ce82ed414c1.png)
 ![image](https://user-images.githubusercontent.com/58566096/206315388-88caa74e-3ac4-4125-988c-0b0c0ee52989.png)
 ![image](https://user-images.githubusercontent.com/58566096/206316164-b87452be-d7db-4846-831f-ac0c396a0b4e.png)
 ![image](https://user-images.githubusercontent.com/58566096/206316437-fc478af6-90d2-4bc4-a505-78a2dc395180.png)
 
+#### Notes - Comments
+- The C
 
 
 ### Q1.3
