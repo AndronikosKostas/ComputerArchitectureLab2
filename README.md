@@ -72,6 +72,8 @@ size 32KB 2-way-associative : system.cpu.icache
 | DDR3_1600_x64 | 0.165372 | 1.653719 | 0.000078 | 0.014056 | 0.421660 |
 | DDR3_2133_x64 | 0.164892 | 1.648918 | 0.000078 | 0.013842 | 0.421665 |
 
+- We observe a small decrease in sim_sec and in CPI due to higher clock of the DDR3_2133_x64 which runs at 2133MHz.
+
 ## Q2.1 - Simulations
 - L1 icache size : 128kB
 - L1 icache associativity : 2-way and 4-way
