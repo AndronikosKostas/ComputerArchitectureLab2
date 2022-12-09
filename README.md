@@ -69,8 +69,8 @@ size 32KB 2-way-associative : system.cpu.icache
 ## Q1.4
 | MemoryType | sim_sec | CPI | miss rate L1iCache | miss rate L1dCache | miss rate L2 |
 | ---------- | ------- | --- | ------------------ | ------------------ | ------------ | 
-| DDR3_1600_x64 | 0.165372 | 1.653719 | 
-| DDR3_2133_x64 | 0.164892 | 1.648918 |
+| DDR3_1600_x64 | 0.165372 | 1.653719 | 0.000078 | 0.014056 | 0.421660 |
+| DDR3_2133_x64 | 0.164892 | 1.648918 | 0.000078 | 0.013842 | 0.421665 |
 
 ## Q2.1 - Simulations
 - L1 icache size : 128kB
