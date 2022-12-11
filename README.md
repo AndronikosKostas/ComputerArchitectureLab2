@@ -100,7 +100,7 @@ A logical approach to the given design-problem is to build a table that will inc
 | L1dCache = 64kB | 1 |
 | L1dCache = 128kB | 2 |
 | L2Cache = 2MB | 0.5 |
-| L2Cache = 2MB | 1 |
+| L2Cache = 4MB | 1 |
 
 
 
