@@ -93,7 +93,7 @@ size 32KB 2-way-associative : system.cpu.icache
 ![image](https://user-images.githubusercontent.com/58566096/206530227-3eac2fef-3f9d-490a-a155-d29d8c7b8baa.png)
 
 ## Q3 - Cost and performance function 
-A logical approach to the given design problem is to build a table that will include some points or weights for each cache parameter we used in the Q2.1. Regarding the cost-comparison we have to make for each cache I end up to the conclusion that a SRAM (L1) can cost about 64 times more than a DRAM (L2). FOr instance, if we set as a reference weight number 2 to the L1i cache size = 128kB the L2 cache size = 2MB must be assigned with $\2048kB/128kB * 2/64 = 0.5$.
+A logical approach to the given design problem is to build a table that will include some points or weights for each cache parameter we used in the Q2.1. Regarding the cost-comparison we have to make for each cache I end up to the conclusion that a SRAM (L1) can cost about 64 times more than a DRAM (L2). FOr instance, if we set as a reference weight number 2 to the L1i cache size = 128kB the L2 cache size = 2MB must be assigned with $\frac{2048kB}{128kB} * \frac{2}{64} = 0.5$.
 
 
 
