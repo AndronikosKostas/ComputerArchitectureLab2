@@ -92,5 +92,7 @@ size 32KB 2-way-associative : system.cpu.icache
 ![image](https://user-images.githubusercontent.com/58566096/206527847-b5e8f5d5-bea6-449e-b234-b79dd34db629.png)
 ![image](https://user-images.githubusercontent.com/58566096/206530227-3eac2fef-3f9d-490a-a155-d29d8c7b8baa.png)
 
+## Q3 - Cost Function
+
 
 
