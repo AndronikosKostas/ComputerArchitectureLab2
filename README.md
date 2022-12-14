@@ -93,36 +93,50 @@ size 32KB 2-way-associative : system.cpu.icache
 ![image](https://user-images.githubusercontent.com/58566096/206530227-3eac2fef-3f9d-490a-a155-d29d8c7b8baa.png)
 
 ## Q3 - Cost and performance function 
-A logical approach to the given design-problem is to build a table that will include some points or weights for each cache parameter we used in the Q2.1. Regarding the cost-comparison we have to make for each cache, I ended up to the conclusion that a SRAM (L1) can cost about 64 times more than a DRAM (L2). For instance, if we set reference weight = 2 to the L1i cache size = 128kB, the L2 cache size = 2MB, must be assigned with $\frac{2048kB}{128kB} * \frac{2}{64} = 0.5$. Regarding cache associativity, we know that by increasing it, we need hardware comparators, so the cost also increases. As far as, for the cache_line an increase of that requires also a more hardware.
+A logical approach to the given design-problem is to build a table that will include some points or weights for each cache parameter we used in the Q2.1. Regarding the cost-comparison we have to make for each cache, I ended up to the conclusion that a SRAM (L1) can cost about 64 times more than a DRAM (L2). For instance, if we set abstractly 4 points to the L1i cache size = 128kB, the L2 cache size = 2MB, must be assigned with $\frac{2048kB}{128kB} * \frac{4}{64} = 1$. Regarding cache associativity, we know that by increasing it, we need hardware comparators, so the cost also increases. As far as, for the cache_line an increase of that requires also a more hardware.
 |Memory Type| Points |
 | --------- | ----------- |
-| L1iCache = 128kB | 2 |
-| L1dCache = 64kB | 1 |
-| L1dCache = 128kB | 2 |
-| L2Cache = 2MB | 0.5 |
-| L2Cache = 4MB | 1 |
+| L1iCache = 64kB | 2 |
+| L1iCache = 128kB | 4|
+| L1dCache = 32kB | 1 |
+| L1dCache = 64kB | 2 |
+| L1dCache = 128kB | 4 |
+| L2Cache = 512kB | 0.5 |
+| L2Cache = 2MB | 1 |
+| L2Cache = 4MB | 2 |
+| L1i Associativity = 1-way | 0.25 |
 | L1i Associativity = 2-way | 0.5 |
 | L1i Associativity = 4-way | 0.75 |
+| L1d Associativity = 1-way | 0.25 |
+| L1d Associativity = 2-way | 0.5 |
+| L1d Associativity = 4-way | 0.75 |
 | L2 Associativity = 8-way | 0.5 |
 | L2 Associativity = 16-way | 0.75 |
 | Cache Line = 128 | 0.75 |
 | Cache Line = 256 | 0.9 |
 
 All the points that we write above are kind of independent except from the ones that are belong to the same category (for example, the L1iCache = 128 and the L1iCache = 256). In order to insert some type of dependence we can add the following function weights. Although we are not exactly sure about the following weights due to lack of documentation
-
 |Memory Type| Weights |
 | --------- | ----------- |
-| L1iCache = 128kB | 1 |
-| L1dCache = 64kB | 1 |
-| L1dCache = 128kB | 1 |
-| L2Cache = 2MB | 1|
+| L1iCache = 64kB | 1 |
+| L1iCache = 128kB | 1|
+| L1dCache = 32kB | 1 |
+| L1dCache = 64kB | 1 | 
+| L1dCache = 128kB | 1|
+| L2Cache = 512kB | 1 |
+| L2Cache = 2MB | 1 |
 | L2Cache = 4MB | 1 |
+| L1i Associativity = 1-way | 0.4 |
 | L1i Associativity = 2-way | 0.4 |
 | L1i Associativity = 4-way | 0.4 |
+| L1d Associativity = 1-way | 0.4 |
+| L1d Associativity = 2-way | 0.4 |
+| L1d Associativity = 4-way | 0.4 |
 | L2 Associativity = 8-way | 0.6 |
 | L2 Associativity = 16-way | 0.6 |
 | Cache Line = 128 | 0.5 |
 | Cache Line = 256 | 0.5 |
+
 
 The above results in the following function: 
 
@@ -130,6 +144,10 @@ f = L1iCache + L1dCache|size=x + L2Cache|size=x + 0.4 * L1iAssociativity|x-way +
 
 ### Deternmine the best case scenario 
 Ideally we want the lowest CPI and the lowest cost for that CPI. So we can find the best architecture if we compare the : COST + CPI. The winner is the smallest number of that addition.
+####  bzip
+Defaults for my simulations are for all programs:
+l1d_size=32kB, l1i_size=64kB --l2_size=512kB --l1i_assoc=1 --l1d_assoc=1 --l2_assoc=2 --cacheline_size=64
+- 401/L1iSize/128kB	1.724339
 
 
 
