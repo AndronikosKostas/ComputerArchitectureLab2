@@ -124,9 +124,9 @@ All the points that we write above are kind of independent except from the ones 
 | Cache Line = 128 | 0.5 |
 | Cache Line = 256 | 0.5 |
 
-The above results in the following function 
+The above results in the following function: 
 
-CostFunction = L1iCache + L1dCache|size=x + L2Cache|size=x + 0.4 * L1iAssociativity|x-way + 0.6 * L2Associativity|x-way  + 0.5 * CacheLine|x-lines
+f = L1iCache + L1dCache|size=x + L2Cache|size=x + 0.4 * L1iAssociativity|x-way + 0.6 * L2Associativity|x-way  + 0.5 * CacheLine|x-lines
 
 
 
