@@ -108,7 +108,7 @@ A logical approach to the given design-problem is to build a table that will inc
 | Cache Line = 128 | 0.75 |
 | Cache Line = 256 | 0.9 |
 
-All the points that we write above are kind of independent except from the ones that are belong to the same category (for example, the L1iCache = 128 and the L1iCache = 256). In order to insert some type of dependence we can add the following function weights.
+All the points that we write above are kind of independent except from the ones that are belong to the same category (for example, the L1iCache = 128 and the L1iCache = 256). In order to insert some type of dependence we can add the following function weights. Although we are not exactly sure about the following weights due to lack of documentation
 
 |Memory Type| Weights |
 | --------- | ----------- |
