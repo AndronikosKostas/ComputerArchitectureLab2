@@ -128,6 +128,10 @@ The above results in the following function:
 
 f = L1iCache + L1dCache|size=x + L2Cache|size=x + 0.4 * L1iAssociativity|x-way + 0.6 * L2Associativity|x-way  + 0.5 * CacheLine|x-lines
 
+### Deternmine the best case scenario 
+Ideally we want the lowest CPI and the lowest cost for that CPI. So we can find the best architecture if we compare the : COST + CPI. The winner is the smallest number of that addition.
+
+
 
 
 
