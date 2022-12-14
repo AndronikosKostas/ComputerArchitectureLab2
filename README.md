@@ -110,8 +110,10 @@ A logical approach to the given design-problem is to build a table that will inc
 | L1d Associativity = 1-way | 0.25 |
 | L1d Associativity = 2-way | 0.5 |
 | L1d Associativity = 4-way | 0.75 |
-| L2 Associativity = 8-way | 0.5 |
-| L2 Associativity = 16-way | 0.75 |
+| L2 Associativity = 2-way | 0.5 |
+| L2 Associativity = 8-way | 1 |
+| L2 Associativity = 16-way | 1.25 |
+| Cache Line = 64 | 0.6 |
 | Cache Line = 128 | 0.75 |
 | Cache Line = 256 | 0.9 |
 
@@ -140,14 +142,17 @@ All the points that we write above are kind of independent except from the ones 
 
 The above results in the following function: 
 
-f = L1iCache + L1dCache|size=x + L2Cache|size=x + 0.4 * L1iAssociativity|x-way + 0.6 * L2Associativity|x-way  + 0.5 * CacheLine|x-lines
+f = 1 * L1iCache + 1 * L1dCache|size=x + 1 * L2Cache|size=x + 0.4 * L1iAssociativity|x-way + 0.4 * L1dAssociativity|x-way + 0.6 * L2Associativity|x-way  + 0.5 * CacheLine|x-lines
 
 ### Deternmine the best case scenario 
 Ideally we want the lowest CPI and the lowest cost for that CPI. So we can find the best architecture if we compare the : COST + CPI. The winner is the smallest number of that addition.
 ####  bzip
 Defaults for my simulations are for all programs:
 l1d_size=32kB, l1i_size=64kB --l2_size=512kB --l1i_assoc=1 --l1d_assoc=1 --l2_assoc=2 --cacheline_size=64
-- 401/L1iSize/128kB	1.724339
+- 401/L1iSize/128kB :	CPI = 1.724339, COST = **4** + 1 + 1 + 0.4 * 0.25 + 0.4 * 0.25 +  0.6 * 0.5 + 0.5 * 0.6 = 6.8 points (ξαναδες το)
+-
+- 
+
 
 
 
