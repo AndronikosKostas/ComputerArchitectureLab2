@@ -94,7 +94,7 @@ size 32KB 2-way-associative : system.cpu.icache
 
 ## Q3 - Cost and performance function 
 A logical approach to the given design-problem is to build a table that will include some points or weights for each cache parameter we used in the Q2.1. Regarding the cost-comparison we have to make for each cache, I ended up to the conclusion that a SRAM (L1) can cost about 64 times more than a DRAM (L2). For instance, if we set reference weight = 2 to the L1i cache size = 128kB, the L2 cache size = 2MB, must be assigned with $\frac{2048kB}{128kB} * \frac{2}{64} = 0.5$. Regarding cache associativity, we know that by increasing it, we need hardware comparators, so the cost also increases. As far as, for the cache_line an increase of that requires also a more hardware.
-|Memory Type| Cost Weight |
+|Memory Type| Points |
 | --------- | ----------- |
 | L1iCache = 128kB | 2 |
 | L1dCache = 64kB | 1 |
@@ -107,6 +107,26 @@ A logical approach to the given design-problem is to build a table that will inc
 | L2 Associativity = 16-way | 0.75 |
 | Cache Line = 128 | 0.75 |
 | Cache Line = 256 | 0.9 |
+
+All the points that we write above are kind of independent except from the ones that are belong to the same category (for example, the L1iCache = 128 and the L1iCache = 256). In order to insert some type of dependence we can add the following function weights.
+
+|Memory Type| Weights |
+| --------- | ----------- |
+| L1iCache = 128kB | 1 |
+| L1dCache = 64kB | 1 |
+| L1dCache = 128kB | 1 |
+| L2Cache = 2MB | 1|
+| L2Cache = 4MB | 1 |
+| L1i Associativity = 2-way | 0.4 |
+| L1i Associativity = 4-way | 0.4 |
+| L2 Associativity = 8-way | 0.6 |
+| L2 Associativity = 16-way | 0.6 |
+| Cache Line = 128 | 0.5 |
+| Cache Line = 256 | 0.5 |
+
+The above results in the following function 
+
+CostFunction = L1iCache + L1dCache|size=x + L2Cache|size=x + 0.4 * L1iAssociativity|x-way + 0.6 * L2Associativity|x-way  + 0.5 * CacheLine|x-lines
 
 
 
